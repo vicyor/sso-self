@@ -10,7 +10,7 @@
 </head>
 
 <body class="text-center">
-<form class="form-signin" action="${pageContext.request.contextPath}/login">
+<form class="form-signin" action="${pageContext.request.contextPath}/login" method="post">
     <%--代表我从哪里来--%>
     <input type="hidden" name="redirectUrl" value="${redirectUrl}">
     <img class="mb-4" src="${pageContext.request.contextPath}/asserts/img/logo.jpg" alt="" width="72" height="72">
@@ -22,7 +22,6 @@
         <label><input type="checkbox" value="remember-me"> 记住我 </label>
     </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-    <p class="mt-5 mb-3 text-muted">艾编程教育</p>
 </form>
 
 </body>
